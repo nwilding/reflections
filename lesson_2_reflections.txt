@@ -6,4 +6,6 @@ How can you use the staging area to make sure you have one commit per logical ch
     The staging area can be used to add only the files which were modified in the completion of the logical change to a commit, omitting those files which may have unrelated changes.
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
     Branching helps keep the history organized by allowing a copy ofthe master code froma point in time within which you can make significant changes without impacting the work going on in the master branch. If the changes work out, the branch can be merged back into the master branch (trunk in SVN).
+How do the diagrams help you visualize the branch structure?
+    A diagram helps visualize the branch structure by showing which commits the branches stem from, and what the common ancestors of the branches are. It also shows how making changes to an earlier checkout, without naming the branch can mean that you'll only be able to access those changes if you recall the commit ID, as there is no parent branch name to follow.
 
