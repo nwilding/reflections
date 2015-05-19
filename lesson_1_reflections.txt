@@ -1,0 +1,20 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+    A diff allowed me to easily spot the bug because it highlighted only those parts of the file which had changed. Knowing that the old file worked correctly, and the new one did not, we could focus on the differences to spot the bug.
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+    Having access to the entire history of a file allows us to go back, see how it has changed, and if there was an item entered that was later deleted that we want to go back and retrieve, we can do that looking through the history of the changes.
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+    Pro: You make commits at logical points in time when you manually choose to commit. 
+    Con: You may forget to make a commit or put too many/few changes into a single commit.
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like google docs, treat each file separately?
+    Git assumed that if you're saving multiple files together that they're related to one another. Related files form a repository, and committing the whole repository ensures that the state of all of the files at the time of the commit is recorded.
+How can you use the commands git log and git diff to view the history of the files?
+    'git log' is used to show the log of all of the commits made to the repository. With good comments on each commit, we can find out where in the log a specific change was made.
+    'git diff [old] [new]' will show the differences between two commits, including lines that were instrted and lines that were deleted.
+Note that 'git checkout' is not equivalent to 'svn checkout'.
+    A 'git checkout' is how you restorr the repository to an earlier state that had been committed.
+How might using versino contorl make you more confident to make changes that could break something?
+    By using version control, it something gets broken in the process of making a change, it is not only easier to track down in which commit the error got introduced, but also with diff we can try to isolate the actual lines of code that may have caused the error.
+Now that you have your workspace set up, what do you want to try using Git for?
+    I want to try using Git for mkaing changes to multiple files and seeing the impact on the repository. I also would like to be able to branch and merge changes.
+
+
